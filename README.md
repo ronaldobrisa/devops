@@ -46,6 +46,13 @@ cd devops
 ### 2.Instalar o VirtualBox 
 Para este projeto será usado a versão para WindowsSO que consiste em realizar o download e seguir os passos de instalação do executável.
 
+### 3.Instalar o Vagrant
+Para este projeto será usado a versão para WindowsSO que consiste em realizar o download e seguir os passos de instalação do executável.
+
+### 4.Iniciar o Vagrant no Vscode
+```bash
+vagrant init
+```
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
