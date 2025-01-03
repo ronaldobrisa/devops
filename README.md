@@ -25,8 +25,9 @@ A partir do Vagrant com provider Virtualbox serão provisionadas 3 Vms (Debian/A
 Lista as ferramentas necessárias para rodar o projeto localmente.
 
 Antes de rodar este projeto, você precisará de:
-- [Docker](https://www.docker.com/) - Para contêinerização da aplicação.
-- [Kubernetes](https://kubernetes.io/) - Para orquestração dos contêineres.
+- [VirtualBox](https://www.virtualbox.org/wiki/Documentation) - criar e executar máquinas virtuais (VMs) em um único sistema físico.
+- [Vagrant](https://www.vagrantup.com/docs) - gerenciamento e automação de máquinas virtuais.
+- [Ansible](https://docs.ansible.com/ansible/latest/index.html) - automação de TI usada para gerenciar e configurar sistemas.
 
 ### Componentes principais
 
