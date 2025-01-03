@@ -64,10 +64,10 @@ Como executar os testes automatizados do projeto.
 
 O projeto inclui testes automatizados de unidade, integração e performance. Para executar os testes localmente, você pode usar os seguintes comandos:
 
-# Testes unitários
+### Testes unitários
 ./gradlew test
 
-# Testes de integração
+### Testes de integração
 ./gradlew integrationTest
 
 ## Contribuindo
