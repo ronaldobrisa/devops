@@ -160,7 +160,7 @@ nano /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 all:
   hosts:
     almalinux:
-      ansible_host: 192.168.1.10
+      ansible_host: #ip
   children:
     webservers:
       hosts:
