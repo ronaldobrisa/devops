@@ -54,6 +54,11 @@ Para este projeto será usado a versão para WindowsSO que consiste em realizar 
 vagrant init
 ```
 
+### 5.Criar as Vms Debian, AlmaLinux e Windows no VirtualBox
+### 6.Instalar o Ansible na Vm AlmaLinux
+### 7.Criar e configurar um playbook
+Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus servidores (instalar pacotes, configurar serviços, etc.). Ele é usado para automatizar e orquestrar configurações em múltiplos hosts. 
+
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
 
