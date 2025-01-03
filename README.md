@@ -153,8 +153,22 @@ mkdir -p /home/vagrant/ansible_project/playbooks
 nano /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
+### 8. Configuração do Inventário
 
 
+```bash
+all:
+  hosts:
+    almalinux:
+      ansible_host: 192.168.1.10
+  children:
+    webservers:
+      hosts:
+        almalinux:
+    databases:
+      hosts:
+        db_server:
+```
 
 
 ## Automação e Pipelines
