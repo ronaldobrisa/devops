@@ -154,7 +154,7 @@ nano /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
 ### 8. Configuração do Inventário
-
+Em um arquivo de inventário, você pode definir os hosts ou grupos de hosts.
 
 ```bash
 all:
