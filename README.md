@@ -120,9 +120,10 @@ sudo dnf install ansible -y
 ansible --version
 ```
 
-
 ### 7.Criar e configurar um playbook
-Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus servidores (instalar pacotes, configurar serviços, etc.). Ele é usado para automatizar e orquestrar configurações em múltiplos hosts. 
+Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus servidores (instalar pacotes, configurar serviços, etc.). Ele é usado para automatizar e orquestrar configurações em múltiplos hosts.
+
+
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
