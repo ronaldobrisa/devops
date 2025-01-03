@@ -108,6 +108,19 @@ end
 ```
 
 ### 6.Instalar o Ansible na Vm AlmaLinux
+
+```bash
+#Enable EPEL repository:
+sudo dnf install epel-release -y
+
+#Install Ansible:
+sudo dnf install ansible -y
+
+#Verify Installation:
+ansible --version
+```
+
+
 ### 7.Criar e configurar um playbook
 Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus servidores (instalar pacotes, configurar serviços, etc.). Ele é usado para automatizar e orquestrar configurações em múltiplos hosts. 
 
