@@ -131,6 +131,7 @@ Estrutura de Diretórios Sugerida:
 
 Aqui está uma estrutura comum para organizar seus arquivos de playbook e configuração do Ansible:
 
+```bash
 /ansible_project
     ├── inventory/                # Arquivos de inventário (hosts)
     ├── playbooks/                # Diretório onde os playbooks serão armazenados
@@ -140,6 +141,7 @@ Aqui está uma estrutura comum para organizar seus arquivos de playbook e config
     ├── group_vars/               # Variáveis para grupos de hosts
     ├── host_vars/                # Variáveis para hosts individuais
     └── ansible.cfg               # Arquivo de configuração do Ansible
+```
 
 ```bash
 mkdir -p /home/vagrant/ansible_project/playbooks
