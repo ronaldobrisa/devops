@@ -17,7 +17,7 @@ O objetivo do projeto é pavimentar um caminho sólido para a formação como pr
 Os recursos utilizados serão principalmente Vagrant para provisionamento de máquinas virtuais e Ansible para gestão do provisionamento.
 
 ## Arquitetura 
-Explica como o sistema é estruturado e quais tecnologias são usadas.
+A partir do Vagrant com provider Virtualbox serão provisionadas 3 Vms (Debian/AlmaLinux/Windows) que servirão de base para rodar todos os microserviços. Também a máquina AlamLinux provisionará o Ansible para realizar a gestão do ambiente. 
 
 ![Arquitetura](imagens/arquitetura.png)
 
