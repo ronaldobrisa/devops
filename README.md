@@ -184,13 +184,13 @@ host_key_checking = False
 Depois de criar e alocar o playbook, você pode executá-lo da seguinte maneira, já considerando o diretório playbooks/:
 
 ```bash
-ansible-playbook /home/vagrant/ansible_project/playbooks/install_apache.yml
+ansible-playbook /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
 Se você tiver um arquivo de inventário diferente do padrão, pode especificá-lo com a opção -i:
 
 ```bash
-ansible-playbook -i /home/vagrant/ansible_project/inventory/hosts /home/vagrant/ansible_project/playbooks/install_apache.yml
+ansible-playbook -i /home/vagrant/ansible_project/inventory/hosts /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
 ## Automação e Pipelines
