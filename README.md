@@ -50,11 +50,17 @@ Para este projeto será usado a versão para WindowsSO que consiste em realizar 
 Para este projeto será usado a versão para WindowsSO que consiste em realizar o download e seguir os passos de instalação do executável.
 
 ### 4.Iniciar o Vagrant no Vscode
+
+
 ```bash
+# Iniciar o Vagrant
 vagrant init
 ```
+
+### 5.Configurar o Vagrantfile e provisionar Vms
+
 ```bash
-### 5.Configurar o Vagrantfile
+
 Vagrant.configure("2") do |config|
 config.vm.provider "virtualbox" do |vb|
 vb.gui = false
