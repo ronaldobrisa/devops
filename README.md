@@ -131,6 +131,13 @@ Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus s
 mkdir -p /home/vagrant/ansible_project/playbooks
 ```
 
+3. Coloque o seu playbook dentro do diretório playbooks/. Por exemplo:
+
+```bash
+nano /home/vagrant/ansible_project/playbooks/playbook_devops.yml
+```
+
+
 
 
 ## Automação e Pipelines
