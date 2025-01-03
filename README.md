@@ -190,7 +190,7 @@ ansible-playbook /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 Se você tiver um arquivo de inventário diferente do padrão, pode especificá-lo com a opção -i:
 
 ```bash
-ansible-playbook -i /home/vagrant/ansible_project/playbooks/ansible_inventory.yml /home/vagrant/ansible_project/playbooks/playbook_devops.yml
+sudo ansible-playbook -i /home/vagrant/ansible_project/inventory/ansible_inventory.yml /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
 ## Automação e Pipelines
