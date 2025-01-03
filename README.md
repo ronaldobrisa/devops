@@ -31,9 +31,9 @@ Antes de rodar este projeto, você precisará de:
 
 ### Componentes principais
 
-- **Docker**: Contêinerização da aplicação.
-- **Kubernetes**: Orquestração de contêineres.
-- **Terraform**: Infraestrutura como código.
+- **Virtualbox**: Virtualizar ambientes para testar, desenvolver e rodar sistemas operacionais diferentes sem a necessidade de hardware físico.
+- **Vagrant**: cria e gerencia ambientes de desenvolvimento e de teste de maneira simples e eficiente, usando uma configuração baseada em Vagrantfile.
+- **Ansible**: utilizado para orquestrar e provisionar servidores de maneira automatizada, garantindo que ambientes estejam configurados da mesma maneira.
 
 ## Como Rodar o Projeto
 Passo a passo para clonar o repositório e configurar o ambiente.
