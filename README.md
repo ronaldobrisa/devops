@@ -38,11 +38,14 @@ Antes de rodar este projeto, você precisará de:
 ## Como Rodar o Projeto
 Passo a passo para clonar o repositório e configurar o ambiente.
 
-### 1. Clonar o repositório
+### 1. Clonar o repositório (Vscode)
 ```bash
 git clone https://github.com/ronaldobrisa/devops.git
 cd devops
 ```
+### 2.Instalar o VirtualBox 
+Para este projeto será usado a versão para WindowsSO que consiste em realizar o download e seguir os passos de instalação do executável.
+
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
