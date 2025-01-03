@@ -9,17 +9,17 @@ Vagrant.configure("2") do |config|
   end
 
   # Definição da VM Debian
-  # config.vm.define "debian" do |debian|
-  #   debian.vm.box = "debian/bullseye64"
-  #   debian.vm.hostname = "Debian-VM"
-  #   debian.vm.network "private_network", type: "static", ip:"192.168.11.11"
+  config.vm.define "debian" do |debian|
+    debian.vm.box = "debian/bullseye64"
+    debian.vm.hostname = "Debian-VM"
+    debian.vm.network "private_network", type: "static", ip:"192.168.11.11"
     
-  #   debian.vm.provider "virtualbox" do |vb|
-  #     vb.name = "Debian-VM-Lab"
-  #     vb.memory = "1024"
-  #     vb.cpus = 2
-  #   end
-  # end
+    debian.vm.provider "virtualbox" do |vb|
+      vb.name = "Debian-VM-Lab"
+      vb.memory = "1024"
+      vb.cpus = 2
+    end
+  end
 
   # Definição da VM AlmaLinux
   config.vm.define "almalinux" do |almalinux|
@@ -35,16 +35,16 @@ Vagrant.configure("2") do |config|
   end
 
   # Definição da VM Windows Server
-  # config.vm.define "windows" do |windows|
-  #   windows.vm.box = "mcree/win2019"
-  #   windows.vm.hostname = "Windows-VM"
-  #   windows.vm.network "private_network", type: "static", ip:"192.168.12.12"
+  config.vm.define "windows" do |windows|
+    windows.vm.box = "mcree/win2019"
+    windows.vm.hostname = "Windows-VM"
+    windows.vm.network "private_network", type: "static", ip:"192.168.12.12"
     
-  #   windows.vm.provider "virtualbox" do |vb|
-  #     vb.name = "Windows-VM-Lab"
-  #     vb.memory = "2048"
-  #     vb.cpus = 2
-  #   end
-  # end
+    windows.vm.provider "virtualbox" do |vb|
+      vb.name = "Windows-VM-Lab"
+      vb.memory = "2048"
+      vb.cpus = 2
+    end
+  end
   
 end
