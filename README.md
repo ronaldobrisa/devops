@@ -125,8 +125,6 @@ Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus s
 
 1. Acesse a máquina virtual onde você instalou o Ansible (no caso, a máquina virtual AlmaLinux).
 
-2. Crie um diretório para o projeto Ansible (se ainda não tiver um):
-
 Estrutura de Diretórios Sugerida:
 
 Aqui está uma estrutura comum para organizar seus arquivos de playbook e configuração do Ansible:
@@ -142,6 +140,8 @@ Aqui está uma estrutura comum para organizar seus arquivos de playbook e config
     ├── host_vars/                # Variáveis para hosts individuais
     └── ansible.cfg               # Arquivo de configuração do Ansible
 ```
+
+2. Crie um diretório para o projeto Ansible (se ainda não tiver um):
 
 ```bash
 mkdir -p /home/vagrant/ansible_project/playbooks
