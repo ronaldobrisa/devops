@@ -13,7 +13,8 @@
 9. [Licença](#licença)
 
 ## Visão Geral 
-Apresenta o objetivo do projeto e suas principais funcionalidades.
+O objetivo do projeto é pavimentar um caminho sólido para a formação como profissional devops.
+Os recursos utilizados serão principalmente Vagrant para provisionamento de máquinas virtuais e Ansible para gestão do provisionamento.
 
 ## Arquitetura 
 Explica como o sistema é estruturado e quais tecnologias são usadas.
