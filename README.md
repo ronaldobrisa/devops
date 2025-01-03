@@ -127,6 +127,20 @@ Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus s
 
 2. Crie um diretório para o projeto Ansible (se ainda não tiver um):
 
+Estrutura de Diretórios Sugerida:
+
+Aqui está uma estrutura comum para organizar seus arquivos de playbook e configuração do Ansible:
+
+/ansible_project
+    ├── inventory/                # Arquivos de inventário (hosts)
+    ├── playbooks/                # Diretório onde os playbooks serão armazenados
+        ├── install_apache.yml
+        ├── setup_nginx.yml
+    ├── roles/                    # Funções (roles) do Ansible (se necessário)
+    ├── group_vars/               # Variáveis para grupos de hosts
+    ├── host_vars/                # Variáveis para hosts individuais
+    └── ansible.cfg               # Arquivo de configuração do Ansible
+
 ```bash
 mkdir -p /home/vagrant/ansible_project/playbooks
 ```
@@ -136,6 +150,7 @@ mkdir -p /home/vagrant/ansible_project/playbooks
 ```bash
 nano /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
+
 
 
 
