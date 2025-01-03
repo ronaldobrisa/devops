@@ -40,8 +40,8 @@ Passo a passo para clonar o repositório e configurar o ambiente.
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/usuario/nome-do-projeto.git
-cd nome-do-projeto
+git clone https://github.com/ronaldobrisa/devops.git
+cd devops
 ```
 
 ## Automação e Pipelines
