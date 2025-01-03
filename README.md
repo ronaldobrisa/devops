@@ -153,7 +153,7 @@ mkdir -p /home/vagrant/ansible_project/playbooks
 nano /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
-### 8. Configuração do Inventário
+### 8.Configuração do Inventário
 Em um arquivo de inventário, você pode definir os hosts ou grupos de hosts.
 
 ```bash
@@ -170,6 +170,28 @@ all:
         db_server:
 ```
 
+### 9.Configurando o Arquivo ansible.cfg
+Você também pode criar um arquivo de configuração ansible.cfg na raiz do seu diretório de projeto, para definir configurações globais, como o caminho do inventário e outros parâmetros.
+Isso permite que você defina as configurações sem precisar especificá-las sempre na linha de comando.
+
+```bash
+[defaults]
+inventory = /home/vagrant/ansible_project/inventory/hosts
+host_key_checking = False
+```
+
+### 10.Executando o Playbook
+Depois de criar e alocar o playbook, você pode executá-lo da seguinte maneira, já considerando o diretório playbooks/:
+
+```bash
+ansible-playbook /home/vagrant/ansible_project/playbooks/install_apache.yml
+```
+
+Se você tiver um arquivo de inventário diferente do padrão, pode especificá-lo com a opção -i:
+
+```bash
+ansible-playbook -i /home/vagrant/ansible_project/inventory/hosts /home/vagrant/ansible_project/playbooks/install_apache.yml
+```
 
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
