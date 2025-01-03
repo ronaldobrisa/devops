@@ -47,4 +47,7 @@ Vagrant.configure("2") do |config|
     end
   end
   
+  # Configuração de sincronização de pastas
+  config.vm.synced_folder "/home/vagrant/ansible_project/playbooks", "/vagrant", type: "virtualbox"
+
 end
