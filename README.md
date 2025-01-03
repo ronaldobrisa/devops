@@ -123,6 +123,14 @@ ansible --version
 ### 7.Criar e configurar um playbook
 Um playbook Ansible é um arquivo YAML que define o que deve ser feito em seus servidores (instalar pacotes, configurar serviços, etc.). Ele é usado para automatizar e orquestrar configurações em múltiplos hosts.
 
+1. Acesse a máquina virtual onde você instalou o Ansible (no caso, a máquina virtual AlmaLinux).
+
+2. Crie um diretório para o projeto Ansible (se ainda não tiver um):
+
+```bash
+mkdir -p /home/vagrant/ansible_project/playbooks
+```
+
 
 
 ## Automação e Pipelines
