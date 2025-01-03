@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
     vb.gui = false
   end  
   
-  config.vm.network "forwarded_port", guest: 80, host: 8090
+  config.vm.network "forwarded_port", guest: 80, host: 8090, host_ip: "127.0.0.1"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
