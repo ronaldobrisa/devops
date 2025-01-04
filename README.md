@@ -195,7 +195,7 @@ sudo ansible-playbook -i /home/vagrant/ansible_project/inventory/ansible_invento
 
 mkdir  C:\github-repos\devops\ansible
 cd  C:\github-repos\devops\ansible
-
+config.vm.synced_folder "C:/github-repos/devops/ansible", "/home/vagrant/ansible_project/playbooks"
 
 
 ## Automação e Pipelines
