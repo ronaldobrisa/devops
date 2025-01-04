@@ -193,6 +193,11 @@ Se você tiver um arquivo de inventário diferente do padrão, pode especificá-
 sudo ansible-playbook -i /home/vagrant/ansible_project/inventory/ansible_inventory.yml /home/vagrant/ansible_project/playbooks/playbook_devops.yml
 ```
 
+mkdir  C:\github-repos\devops\ansible
+cd  C:\github-repos\devops\ansible
+
+
+
 ## Automação e Pipelines
 Descreve a configuração e os passos do pipeline CI/CD.
 
