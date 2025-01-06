@@ -1,8 +1,5 @@
-# https://docs.vagrantup.com.
-# You can search for boxes at https://vagrantcloud.com/search.
-
 Vagrant.configure("2") do |config|
-  
+
   # Configuração do provedor VirtualBox (para todas as VMs)
   config.vm.provider "virtualbox" do |vb|
     vb.gui = false # Desabilita a interface gráfica das VMs
@@ -13,11 +10,16 @@ Vagrant.configure("2") do |config|
     debian.vm.box = "debian/bullseye64"
     debian.vm.hostname = "Debian-VM"
     debian.vm.network "private_network", type: "static", ip:"192.168.11.11"
-    
+
     debian.vm.provider "virtualbox" do |vb|
       vb.name = "Debian-VM-Lab"
       vb.memory = "1024"
       vb.cpus = 2
+    end
+
+    # Provisionamento com Ansible
+    debian.vm.provision "ansible" do |ansible|
+      ansible.playbook = "/vagrant/ansible_project/playbooks/setup-repository.yml" # Caminho do playbook no diretório sincronizado
     end
   end
 
@@ -26,11 +28,16 @@ Vagrant.configure("2") do |config|
     almalinux.vm.box = "almalinux/8"
     almalinux.vm.hostname = "AlmaLinux-VM"
     almalinux.vm.network "private_network", type: "static", ip:"192.168.10.10"
-    
+
     almalinux.vm.provider "virtualbox" do |vb|
       vb.name = "AlmaLinux-VM-Lab"
       vb.memory = "1024"
       vb.cpus = 2
+    end
+
+    # Provisionamento com Ansible
+    almalinux.vm.provision "ansible" do |ansible|
+      ansible.playbook = "/vagrant/ansible_project/playbooks/setup-repository.yml" # Caminho do playbook no diretório sincronizado
     end
   end
 
@@ -39,7 +46,7 @@ Vagrant.configure("2") do |config|
     windows.vm.box = "mcree/win2019"
     windows.vm.hostname = "Windows-VM"
     windows.vm.network "private_network", type: "static", ip:"192.168.12.12"
-    
+
     windows.vm.provider "virtualbox" do |vb|
       vb.name = "Windows-VM-Lab"
       vb.memory = "2048"
@@ -48,6 +55,7 @@ Vagrant.configure("2") do |config|
   end
   
   # Configuração de sincronização de pastas
-  config.vm.synced_folder "/home/vagrant/ansible_project/playbooks", "/vagrant", type: "virtualbox"
-  config.vm.synced_folder "C:/github-repos/devops/ansible", "/home/vagrant/ansible_project/playbooks"
+  config.vm.synced_folder "C:/github-repos/devops/.vagrant", "/home/vagrant/ansible_project/playbooks", type: "virtualbox"
+
 end
+
