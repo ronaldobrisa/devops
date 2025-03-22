@@ -6,14 +6,14 @@ on:
 
 jobs:
   CI:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps: 
       - run: echo "Obter código"
       - run: echo "Executar Docker Build"
       - run: echo "Enviar imagem Docker para o Docker Hub"
 
   CD:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
     steps: 
       - run: echo "Obter código"
       - run: echo "configurar o kubeconfig"
