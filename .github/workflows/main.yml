@@ -18,9 +18,9 @@ jobs:
       - name: Construcao da imagem docker
         uses: docker/build-push-action@v6
         with:
-          context: ./src
+          context: .
+          file: ./Dockerfile
           push: true
-          file: ./src/Dockerfile
           tags: ronaldobrisa/fake-shop-desafio-v2:v3
       - run: echo "Enviar imagem Docker para o Docker Hub"
 
