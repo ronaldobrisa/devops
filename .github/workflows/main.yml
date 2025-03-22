@@ -15,7 +15,13 @@ jobs:
         with:
           username: ${{ vars.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - run: echo "Executar Docker Build"
+      - name: Construcao da imagem docker
+        uses: docker/build-push-action@v6
+        with:
+          context: ./src
+          push: true
+          file: ./src/Dockerfile
+          tags: ronaldobrisa/fake-shop-desafio-v2:v3
       - run: echo "Enviar imagem Docker para o Docker Hub"
 
   CD:
